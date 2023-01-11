@@ -42,20 +42,8 @@ You will also see any lint errors in the console.
 14. Done
 
 ### OBS:
- If you use paths in tsconfig.json you need to add the following prop inside resolve in webpack.config.js
- `
-  ...
-    {
-       resolve: {
-          .....
-          alias: {
-            '@': path.resolve(__dirname, 'src'),
-          },
-          .....
-       }
-       ....
-    ]
- `
+ If you use paths in tsconfig.json you need to add the following `alias` prop inside ´resolve´ in webpack.config.js
+ `alias: { '@': path.resolve(__dirname, 'src') }`
 
 ### Thanks for visiting!
 
