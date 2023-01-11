@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  padding: 20px 15px;
+  background-color: #282c34;
+  color: white;
+  height: 100%;
+}
+
+.App-header {
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.todo-container{
+  min-height: 83vh;
+  margin: 1rem auto;
+  max-width: 28rem;
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 7px;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-item-button{
+  background-color: #ffffff00;
+  color: white;
+  border: 1px solid;
+  border-radius: 15px;
+  height: 23px;
+  font-size: 12px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.delete-item-button:hover{
+  transform: scale(1.15);
+}
+
+.list-item .content{
+  display: flex;
+  align-items: self-end;
+}
+
+.list-item:hover{
+  background-color: #ebebeb;
+  color: black;
+  box-shadow: 0px 0px 9px 0px white;  
+}
+
+.list-item:hover .delete-item-button{
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.form{
+  margin-top: 15px;
+}
+
+.form-error{
+  color: #eb7474;  
+  margin: 5px 2px;
+}
+
+.form input{
+  background-color: #00800000;
+  border: 2px solid;
+  border-radius: 5px;
+  height: 24px;
+  color: white;
+}
+
+.form .fields-section{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form .submit-button{
+  margin-left: 10px;
+  border: 2px solid;
+  height: 30px;
+  width: 30px;
+  color: white;
+  border-radius: 15px;
+  background-color: #769dff;
+}
+
+.summary-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 30rem;
+  margin: 15px auto;
+}
+
+.totals-card{
+  width: 120px;
+  text-align: left;
+  background-color: #6a6a6a21;
+  padding: 11px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 7px -7px #959595;
+}
+
+.totals-card .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totals-card p{
+  margin: 0px 0px 3px;
+  color: #cfcece;
+}
+
+.totals-card span{
+  font-weight: bold;
+}

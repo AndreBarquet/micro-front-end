@@ -1,0 +1,19 @@
+{
+  "name": "react-typescript-micro-frontend",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "host",
+      "remote"
+    ]
+  },
+  "scripts": {
+    "start": "npm run start:main-container && npm run start:todo-list",
+    "start:main-container": "cd ./main-container && npm start",
+    "start:todo-list": "cd ./todo-list && npm start",
+    "dev": "concurrently --kill-others \"npm run start:main-container\" \"npm run start:todo-list\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
